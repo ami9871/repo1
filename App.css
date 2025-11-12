@@ -1,0 +1,110 @@
+/* 🌟 General App Layout */
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🌈 Navbar Styling Override (Bootstrap tweaks) */
+.navbar {
+  background: linear-gradient(90deg, #007bff 0%, #6610f2 100%);
+  padding: 0.8rem 1rem;
+}
+
+.navbar-brand {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #e9ecef !important;
+  font-size: 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffc107 !important;
+}
+
+/* 🔽 Dropdown Menu Styling */
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* 🧭 Search Bar Styling */
+form.d-flex {
+  gap: 0.5rem;
+}
+
+.form-control {
+  border-radius: 0.4rem;
+  border: 1px solid #ced4da;
+  padding: 0.5rem 0.75rem;
+}
+
+.btn-outline-success {
+  color: #fff;
+  border-color: #ffc107;
+  background-color: #ffc107;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-outline-success:hover {
+  background-color: #ffca2c;
+  transform: scale(1.05);
+  border-color: #ffca2c;
+}
+
+/* 🌙 Optional Header Section */
+.App-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  color: #343a40;
+}
+
+/* ⚙️ Animations (for logo if you keep it) */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 🌟 Footer (optional) */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
